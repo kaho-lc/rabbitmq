@@ -12,8 +12,9 @@ import java.util.concurrent.TimeoutException;
  * @description rabbitmq的工具类
  * @date 2022/7/12 14:50
  */
-public class rabbitmqUtil {
+public class RabbitMqUtil {
     public static Channel getChannel() throws IOException, TimeoutException {
+        //创建连接工厂
         ConnectionFactory factory = new ConnectionFactory();
 
         factory.setUsername("kaho");
